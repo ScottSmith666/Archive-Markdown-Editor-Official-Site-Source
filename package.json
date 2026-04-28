@@ -1,0 +1,33 @@
+{
+  "name": "ameos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf ./scottsmith666.github.io && vite build && mv ./dist ./scottsmith666.github.io && cd ./scottsmith666.github.io && git init && git add . && git commit -m \"Website content update.\" && git branch -M master && git remote add origin git@github.com:ScottSmith666/scottsmith666.github.io.git && git push -u origin master --force",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3",
+    "x0popup": "^0.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "gh-pages": "^6.3.0",
+    "vite": "^7.1.11",
+    "vite-plugin-vue-devtools": "^8.0.3"
+  },
+  "description": "Archive Markdown Editor official site.",
+  "main": "vite.config.js",
+  "keywords": [
+    "ameos"
+  ],
+  "author": "Scott Smith",
+  "license": "MIT"
+}
