@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/index',
+      path: '/archive-markdown-editor',
       name: 'ame',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -14,7 +14,7 @@ const router = createRouter({
     },
       {
           path: '',
-          redirect: '/index',
+          redirect: '/archive-markdown-editor',
       }
   ],
 })
